@@ -3,20 +3,19 @@
 public class Palindrome {
 
     public static void main(String[] args) {
-        String Palindrome  = "";
-        String str = "ollo";
-        String reverse = "";
+        String Palindrome  = ""; // Temp variable to check the word in reverse 
+        String str = "ollo"; // Change this to check if the word is a palindrome 
+        String reverse = ""; // Temp variable to check the word in reverse 
 
         for (int i = 1; i <= str.length(); i++) {
             Palindrome = Palindrome + str.charAt(str.length()-i);
             reverse = reverse + str.charAt(str.length()-i);
         }
 
-       // System.out.println(Palindrome);
         if (str.equalsIgnoreCase(Palindrome)){
             System.out.println("Passed");
         }
-   else{
+        else {
             System.out.println("Failed");
         }
         System.out.println(reverse);
