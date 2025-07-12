@@ -5,12 +5,11 @@ public class Palindrome {
     public static void main(String[] args) {
         String Palindrome  = ""; // Temp variable to check the word in reverse 
         String str = "ollo"; // Change this to check if the word is a palindrome 
-        String reverse = ""; // Temp variable to check the word in reverse 
+
 
         for (int i = 1; i <= str.length(); i++) {
             Palindrome = Palindrome + str.charAt(str.length()-i);
-            reverse = reverse + str.charAt(str.length()-i);
-        }
+       }
 
         if (str.equalsIgnoreCase(Palindrome)){
             System.out.println("Passed");
@@ -18,8 +17,6 @@ public class Palindrome {
         else {
             System.out.println("Failed");
         }
-        System.out.println(reverse);
-
     }
 
 
